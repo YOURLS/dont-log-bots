@@ -1,5 +1,6 @@
-Youlrs Plugin 
+Yourls Plugin 
 =============
+
 
 Don't Log Bots
 --------------
