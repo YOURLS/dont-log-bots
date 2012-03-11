@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Don't Log Bots
-Plugin URI: http://yourls.org/
+Plugin URI: https://github.com/LeoColomb/Dont-Log-Bots-for-Yourls
 Description: Ignore bot hits in your stats
 Version: 1.2
 Author: OZH, L&#233;o Colomb
-Author URI: http://colombaro.fr/
+Author URI: http://about.me/LeoColomb
 */
 
 // Check current user-agent against a list of bots, return boolean
