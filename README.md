@@ -20,5 +20,3 @@ See more information at [Yourls Code](http://code.google.com/p/yourls/)
 ### Informations
 
 This plugin is an update of original [Don't Log Bots](http://code.google.com/p/yourls/wiki/PluginDontLogBots) plugin written by Ozh
-
-Léo Colomb -- L.P.C. Cie		|		2012 - CC
