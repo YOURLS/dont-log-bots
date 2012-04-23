@@ -1,7 +1,6 @@
 Yourls Plugin 
 =============
 
-
 Don't Log Bots
 --------------
 
@@ -15,7 +14,7 @@ Plugin for [YOURLS 1.5.1+](http://yourls.org/): Ignore bot hits in your stats (b
 
 ### More
 
-See more information at [Yourls Code](http://code.google.com/p/yourls/)
+See more informations at [Yourls Code](http://code.google.com/p/yourls/)
 
 ### Informations
 
