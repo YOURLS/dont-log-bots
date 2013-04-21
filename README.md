@@ -1,24 +1,15 @@
-Yourls Plugin 
-=============
-
-
 Don't Log Bots
---------------
+==============
 
-Plugin for [YOURLS 1.5.1+](http://yourls.org/): Ignore bot hits in your stats (both click count as seen in the main admin page and in detailed stats)
+Plugin for [YOURLS](http://yourls.org) 1.5.1+. 
 
-### Install
+Description
+-----------
+Ignore bot hits in your stats (both click count as seen in the main admin page and in detailed stats).
 
-* In `/user/plugins`, create a new folder named `dont-log-bots`
-* In this new directory, copy the file named `plugin.php`
-* Go to the Plugins administration page and activate the plugin 
-
-### More
-
-See more information at [Yourls Code](http://code.google.com/p/yourls/)
-
-### Informations
-
-This plugin is an update of original [Don't Log Bots](http://code.google.com/p/yourls/wiki/PluginDontLogBots) plugin written by Ozh
-
-Léo Colomb -- L.P.C. Cie		|		2012 - CC
+Installation
+------------
+1. In `/user/plugins`, create a new folder named `dont-log-bots`.
+2. Drop these files in that directory.
+3. Go to the Plugins administration page ( *eg* `http://sho.rt/admin/plugins` ) and activate the plugin.
+4. Have fun!
