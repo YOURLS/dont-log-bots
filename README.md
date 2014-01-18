@@ -34,3 +34,6 @@ SELECT DISTINCT `user_agent` as ua, COUNT(*) as c FROM `yourls_log` GROUP BY ua 
 ## License
 
 The code is available under [MIT licence](http://revolunet.mit-license.org/).
+
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/70757afe48c17be20fb1ecd375d98897 "githalytics.com")](http://githalytics.com/luixxiul/dont-log-crawlers)
