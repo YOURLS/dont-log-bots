@@ -8,6 +8,7 @@ Because there are so many crawlers and bots out there, only ones confirmed activ
 
 1. Make a new directory in ``user/plugins``
 2. Upload ``plugin.php`` there
+3. Go to the Plugins administration page ( eg http://sho.rt/admin/plugins ) and activate the plugin.
 
 Done!
 
