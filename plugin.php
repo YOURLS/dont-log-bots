@@ -2,7 +2,7 @@
 /**
 Plugin Name: Don't Log Crawlers
 Plugin URI: https://github.com/luixxiul/dont-log-crawlers
-Description: Prevents YOURLS from counting clicks from crawlers & bots with specific User Agent strings
+Description: Prevents YOURLS from counting clicks of crawlers & bots with specific User Agent strings
 Version: 1.0
 Author: Suguru Hirahara
 Author URI: http://www.philosophyguides.org
