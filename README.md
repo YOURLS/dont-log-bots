@@ -1,4 +1,4 @@
-Dont Log Bots
+Don't Log Bots
 =============
 
 Plugin for [YOURLS](http://yourls.org) `1.6+`. 
