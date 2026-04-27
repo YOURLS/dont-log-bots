@@ -13,9 +13,12 @@ if( !defined( 'YOURLS_ABSPATH' ) ) die();
 
 // Check current user-agent against a list of bots, return boolean
 function yp_dlb_is_bot() {
-    // Get current User-Agent
-    $current = strtolower( $_SERVER['HTTP_USER_AGENT'] );
-        
+    // Get current User-Agent (may be missing on CLI / some requests; strtolower(null) is deprecated in PHP 8.1+)
+    if ( empty( $_SERVER['HTTP_USER_AGENT'] ) ) {
+        return false;
+    }
+    $current = strtolower( (string) $_SERVER['HTTP_USER_AGENT'] );
+
     // Array of known bot lowercase strings
     // Example: 'googlebot' will match 'Googlebot/2.1 (+http://www.googlebot.com/bot.html)'
     $bots = array(
