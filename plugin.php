@@ -247,7 +247,11 @@ yourls_add_filter( 'shunt_update_clicks', 'yp_dlb_skip_if_bot' );
 yourls_add_filter( 'shunt_log_redirect', 'yp_dlb_skip_if_bot' );
 
 // Skip if it's a bot
-function yp_dlb_skip_if_bot() {
-    return yp_dlb_is_bot();
-    // if anything but false is returned, functions using the two shunt_* filters will be short-circuited
+function yp_dlb_skip_if_bot($shunt = false) {
+    if (yp_dlb_is_bot()) {
+        return true;
+    }
+    // functions using the two shunt_* filters will be short-circuited for any return value but the default passed in,
+    // *including false*, so preserve the default value if request doesn't appear to be from a bot
+    return $shunt;
 }
