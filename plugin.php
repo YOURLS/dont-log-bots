@@ -3,7 +3,7 @@
 Plugin Name: Don't Log Bots
 Plugin URI: https://github.com/YOURLS/dont-log-bots
 Description: Do not log some bots in stats
-Version: 1.3
+Version: 1.4
 Author: Ozh, Leo Colomb, Suguru Hirahara
 Author URI: http://yourls.org
 */
@@ -247,7 +247,10 @@ yourls_add_filter( 'shunt_update_clicks', 'yp_dlb_skip_if_bot' );
 yourls_add_filter( 'shunt_log_redirect', 'yp_dlb_skip_if_bot' );
 
 // Skip if it's a bot
-function yp_dlb_skip_if_bot() {
-    return yp_dlb_is_bot();
-    // if anything but false is returned, functions using the two shunt_* filters will be short-circuited
+function yp_dlb_skip_if_bot( $default = false ) {
+    // For a bot, return true: the shunt_* filter consumers short-circuit and skip the DB write.
+    // For anything else, return $default unchanged: since YOURLS 1.10.4 this is a sentinel value
+    // (see yourls_shunt_default()) and returning anything else - including false - short-circuits too.
+    // Returning $default also behaves correctly on older YOURLS, where the default is false.
+    return yp_dlb_is_bot() ? true : $default;
 }
